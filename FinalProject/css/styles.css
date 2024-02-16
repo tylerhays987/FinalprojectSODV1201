@@ -1,0 +1,20 @@
+body {
+  background-color: #deaa88;
+  padding: 25px;
+  color: black;
+}
+
+header {
+  background-color: #EAD2A8;
+  text-align: center;
+  color: black;
+}
+
+button{
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid;
+  background-color: #ADD8E6;
+  position: center;
+}
