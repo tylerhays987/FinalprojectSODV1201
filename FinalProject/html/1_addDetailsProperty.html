@@ -11,7 +11,41 @@
         <h1>Add Details to Property Page</h1>
     </header>
 <body>
-
+<body>
+  <h2>List Workspaces for Rent</h2>
+  <form>
+    <label for="property">Select Property:</label>
+    <select id="property" name="property" required>
+      <option value="property1">Property 1</option>
+      <option value="property2">Property 2</option>
+      <!-- Add more options for other properties -->
+    </select>
+    
+    <label for="workspace_type">Workspace Type:</label>
+    <select id="workspace_type" name="workspace_type" required>
+      <option value="meeting_room">Meeting Room</option>
+      <option value="private_office">Private Office Room</option>
+      <option value="open_desk">Desk in Open Work Area</option>
+    </select>
+    
+    <label for="seating_capacity">Seating Capacity:</label>
+    <input type="number" id="seating_capacity" name="seating_capacity" required>
+    
+    <label for="availability_date">Availability Date:</label>
+    <input type="date" id="availability_date" name="availability_date" required>
+    
+    <label for="lease_term">Lease Term:</label>
+    <select id="lease_term" name="lease_term" required>
+      <option value="day">Day</option>
+      <option value="week">Week</option>
+      <option value="month">Month</option>
+    </select>
+    
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" required>
+    
+    <input type="submit" value="Submit">
+  </form>
   <a href="1_editList.html">
       <button>Back to Edit list page</button>
   </a>
