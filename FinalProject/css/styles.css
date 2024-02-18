@@ -6,13 +6,13 @@ li {
 }
 
 body {
-  background-color: #deaa88;
+  background-color: #EAD2A8;
   padding: 25px;
   color: black;
 }
 
 header {
-  background-color: #EAD2A8;
+  background-color: #deaa88;
   text-align: center;
   color: black;
 }
@@ -22,6 +22,6 @@ button{
   padding: 10px;
   border-radius: 20px;
   border: 2px solid;
-  background-color: #ADD8E6;
+  background-color: #deaa88;
   position: center;
 }
