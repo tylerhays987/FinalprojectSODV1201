@@ -25,3 +25,173 @@ button{
   background-color: #deaa88;
   position: center;
 }
+
+hr{
+  border: 2px solid #deaa88;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*  --  OWNERS PAGE  --  */
+.Listings{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  gap: 50px 50px;
+}
+
+.listedItem{
+  border: 1px solid #deaa88;
+  width: 100%;
+  height: 350px;
+  align-self: center;
+}
+
+.listingName{
+  width: 100%;
+  background-color: #deaa88;
+  height: 15%;
+}
+
+h3{
+  margin-top: 0px;
+  padding: 15px 15px 15px 15px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.listingImg{
+  background-color: #deaa88;
+  margin: auto;
+  margin-top: 10px;
+  width: 90%;
+  height: 50%;
+}
+
+.ownerListingNav{
+  text-align: center;
+  display: inline-block;
+  margin-right: 30px;
+  margin-left: 30px;
+  position: relative;
+}
+
+#viewListing{
+  height: 30px;
+  width: 40%;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid #deaa88;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 70px;
+}
+
+
+/*  --  COWORKERS PAGE  --  */
+.searchBar{
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  margin-top: 20px;
+}
+
+#searchBar{
+  height: 30px;
+  width: 35%;
+  border: 2px solid #deaa88;
+}
+#location{
+  height: 29px;
+  width: 20%;
+  border: 2px solid #deaa88;
+}
+
+#dropdown{
+  height: 35px;
+  width: 11%;
+  background-color: white;
+  border: 2px solid #deaa88;
+}
+
+#searchBtn{
+  height: 35px;
+  width: 5%;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid #deaa88;
+}
+
+
+/*  --  RESERVE LIST --  */
+
+
+#propertyImg{
+  position: absolute;
+  left: 100px;
+  top: 150px;
+  width: 40%;
+  height: 400px;
+  background-color: #deaa88;
+}
+
+#propertyDesc{
+  position: absolute;
+  right: 100px;
+  top: 150px;
+  width: 40%;
+  height: 396px;
+  border: 2px solid #deaa88;
+}
+
+#property{
+  padding: 5px 20px 0px 20px;
+}
+
+label{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.propertyInfo{
+  text-align: center;
+  margin-top: 40px;
+}
+
+#backBtn{
+  height: 35px;
+  width: 5%;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid #deaa88;
+}
+
+.contact{
+  position: absolute;
+  left: 20px;
+  margin-top: 20px;
+}
+
+#contactBtn{
+  height: 35px;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid #deaa88;
+}
+
+.confirm{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+#confirmBtn{
+  height: 35px;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid #deaa88;
+}
