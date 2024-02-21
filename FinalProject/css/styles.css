@@ -17,14 +17,7 @@ header {
   color: black;
 }
 
-button{
-  box-sizing: border-box;
-  padding: 10px;
-  border-radius: 20px;
-  border: 2px solid;
-  background-color: #deaa88;
-  position: center;
-}
+
 
 hr{
   border: 2px solid #deaa88;
