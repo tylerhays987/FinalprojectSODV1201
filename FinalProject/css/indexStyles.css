@@ -1,0 +1,26 @@
+li {
+  background-color: #deaa88;
+  display: inline-block;
+  position: center;
+  margin: 25px 25px;
+}
+
+body {
+  background-color: #EAD2A8;
+  padding: 25px;
+  color: black;
+}
+
+header {
+  background-color: #deaa88;
+  text-align: center;
+  color: black;
+}
+
+hr{
+  border: 2px solid #deaa88;
+}
+
+a{
+  text-decoration: none;
+}
