@@ -89,6 +89,16 @@ h3{
   margin-right: 30%;
   margin-top: 70px;
 }
+#editListing{
+  height: 30px;
+  width: 40%;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid #deaa88;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 70px;
+}
 
 
 /*  --  COWORKERS PAGE  --  */
