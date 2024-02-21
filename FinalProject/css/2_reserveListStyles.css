@@ -1,0 +1,65 @@
+#propertyImg{
+  position: absolute;
+  left: 100px;
+  top: 150px;
+  width: 40%;
+  height: 400px;
+  background-color: #deaa88;
+}
+
+#propertyDesc{
+  position: absolute;
+  right: 100px;
+  top: 150px;
+  width: 40%;
+  height: 396px;
+  border: 2px solid #deaa88;
+}
+
+#property{
+  padding: 5px 20px 0px 20px;
+}
+
+label{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.propertyInfo{
+  text-align: center;
+  margin-top: 40px;
+}
+
+#backBtn{
+  height: 35px;
+  width: 5%;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid #deaa88;
+}
+
+.contact{
+  position: absolute;
+  left: 20px;
+  margin-top: 20px;
+}
+
+#contactBtn{
+  height: 35px;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid #deaa88;
+}
+
+.confirm{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+#confirmBtn{
+  height: 35px;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid #deaa88;
+}
