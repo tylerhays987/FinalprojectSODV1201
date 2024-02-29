@@ -9,51 +9,51 @@
     </head>
 
     <body>
-        <h1>Welcome, <i>WorkerName</i>!</h1> <!-- change from "workername" to the users name -->
-        <hr>
-        <div class="searchBar">
-            <form>
-                <input type="text" placeholder="Search..." name="search" id="searchBar">
+        <div class="welcomeBar">
+            <h1>Welcome!</h1>
+        </div>
+        <div class="mainSection">
+            <div class="searchBar">
+                <form>
+                    <input type="text" placeholder="Search..." name="search" id="searchBar">
+                    <br>
+                    <select name="seats" id="dropdown">
+                        <option value="placeholder">Seats</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
 
-                <select name="seats" id="dropdown">
-                    <option value="placeholder">Seats</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
+                    <select name="price" id="dropdown">
+                        <option value="placeholder">Price</option>
+                        <option value="1">Under $30</option>
+                        <option value="2">$30 to $40</option>
+                        <option value="3">$40 to $50</option>
+                        <option value="4">$50 to $60</option>
+                        <option value="5">$60 to $70</option>
+                        <option value="6">$70 and above</option>
+                    </select>
 
-                <select name="price" id="dropdown">
-                    <option value="placeholder">Price</option>
-                    <option value="1">Under $30</option>
-                    <option value="2">$30 to $40</option>
-                    <option value="3">$40 to $50</option>
-                    <option value="4">$50 to $60</option>
-                    <option value="5">$60 to $70</option>
-                    <option value="6">$70 and above</option>
-                </select>
+                    <select name="sqft" id="dropdown">
+                        <option value="placeholder">Square Feet</option>
+                        <option value="1">Under 100sqft</option>
+                        <option value="2">100sqft to 150sqft</option>
+                        <option value="3">150sqft to 200sqft</option>
+                        <option value="4">200sqft to 250sqft</option>
+                        <option value="5">250sqft to 300sqft</option>
+                        <option value="6">300sqft and above</option>
+                    </select>
 
-                <select name="sqft" id="dropdown">
-                    <option value="placeholder">Square Feet</option>
-                    <option value="1">Under 100sqft</option>
-                    <option value="2">100sqft to 150sqft</option>
-                    <option value="3">150sqft to 200sqft</option>
-                    <option value="4">200sqft to 250sqft</option>
-                    <option value="5">250sqft to 300sqft</option>
-                    <option value="6">300sqft and above</option>
-                </select>
-
-                <input type="text" placeholder="Location" name="location" id="location">
-
+                    <input type="text" placeholder="Location" name="location" id="location">
+                    <br>
                     <button type="submit" id="searchBtn"><a href="2_propertyList.html">Search</a></button>
-            </form>
+                </form>
+            </div>
         </div>
     </body>
-
-
     <footer>
     </footer>
-
 </html>
