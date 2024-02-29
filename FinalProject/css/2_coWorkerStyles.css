@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 li {
   background-color: #deaa88;
   display: inline-block;
@@ -6,56 +8,91 @@ li {
 }
 
 body {
-  background-color: #EAD2A8;
-  padding: 25px;
   color: black;
-}
-
-header {
-  background-color: #deaa88;
-  text-align: center;
-  color: black;
-}
-
-hr{
-  border: 2px solid #deaa88;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(68, 81, 121);
 }
 
 a{
   text-decoration: none;
 }
 
+.welcomeBar{
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+
+  background-color: white;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid rgb(39, 39, 39);
+  margin: 0px;
+}
+
+.mainSection{
+  background-image: url(../images/backgroundOffice.jpeg);
+  background-size: 100%;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 85%;
+  height: 700px;
+  border: 2px solid rgb(39, 39, 39);
+  border-top: 0px;
+}
+
 .searchBar{
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 0px;
+  padding-top: 150px;
   margin-top: 20px;
+  text-align: center;
 }
 
 #searchBar{
-  height: 30px;
-  width: 35%;
-  border: 2px solid #deaa88;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 70px;
+  width: 58.5%;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
 }
+
 #location{
-  height: 29px;
-  width: 20%;
-  border: 2px solid #deaa88;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 69px;
+  width: 17%;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
 }
 
 #dropdown{
-  height: 35px;
-  width: 11%;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 75px;
+  width: 13%;
   background-color: white;
-  border: 2px solid #deaa88;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
 }
 
 #searchBtn{
-  height: 35px;
-  width: 5%;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 75px;
+  width: 59%;
   background-color: white;
   border-radius: 0px;
-  border: 2px solid #deaa88;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
 }
 
+/*
+  Background image credit: https://unsplash.com/pt-br/fotografias/mesa-de-conferencia-e-cadeiras-ovais-de-madeira-marrom-dentro-da-sala-de-conferencias-GWe0dlVD9e0
+*/
