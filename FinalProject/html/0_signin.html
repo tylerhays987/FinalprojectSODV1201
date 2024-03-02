@@ -8,22 +8,26 @@
     <script src = "../javaScript/0_signinScript.js"> </script>
 </head>
     <header>
+      <div class="welcomeBar">
         <h1>Sign-in Page</h1>
+      </div>
     </header>
 <body>
     <!-- form for user input (sign-in) -->
-<form>
+<div class="mainSection">
+  <form>
     <label for="username">Username:</label>
-    <input type="text" id="username" name="username">
+    <input type="text" id="username" name="username" placeholder="username"><br>
     <label for="password">Password:</label>
-    <input type="text" id="password" name="password">
-    <input type="submit" value="Submit">
+    <input type="text" id="password" name="password" placeholder="password">
+    <input type="submit" value="Submit" id="submitBtn">
   </form>
+
 <!-- button to send user to home screen -->
-<a href="index.html">
-    <button>Back to Home</button>
-</a>
-    
+  <a  href="index.html">
+    <button id="backBtn">Back to Home</button>
+  </a>
+</div>
 </body>
 
 
