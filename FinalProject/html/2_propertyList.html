@@ -9,114 +9,85 @@
     </head>
 
     <body>
-        <h1>Welcome, <i>WorkerName</i>!</h1> <!-- change from "workername" to the users name -->
-        <hr>
-        <div class="searchBar">
-            <form>
-                <input type="text" placeholder="Search..." name="search" id="searchBar">
-
-                <select name="seats" id="dropdown">
-                    <option value="placeholder">Seats</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
-
-                <select name="price" id="dropdown">
-                    <option value="placeholder">Price</option>
-                    <option value="1">Under $30</option>
-                    <option value="2">$30 to $40</option>
-                    <option value="3">$40 to $50</option>
-                    <option value="4">$50 to $60</option>
-                    <option value="5">$60 to $70</option>
-                    <option value="6">$70 and above</option>
-                </select>
-
-                <select name="sqft" id="dropdown">
-                    <option value="placeholder">Square Feet</option>
-                    <option value="1">Under 100sqft</option>
-                    <option value="2">100sqft to 150sqft</option>
-                    <option value="3">150sqft to 200sqft</option>
-                    <option value="4">200sqft to 250sqft</option>
-                    <option value="5">250sqft to 300sqft</option>
-                    <option value="6">300sqft and above</option>
-                </select>
-
-                <input type="text" placeholder="Location" name="location" id="location">
-
-                <button type="submit" id="searchBtn"><a href="2_propertyList.html">Search</a></button>
-            </form>
+        <div class="welcomeBar">
+            <h1>BVC Shared Workspace</h1>
         </div>
-        <div class="Listings">
-            <div class="listedItem">
-                <div class="listingName">
-                    <h3>Listing 1</h3>
-                </div>
-                <div class="listingImg"></div>
-                <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
-            </div>
+        <div class="mainSection">
+            <div class="searchBar">
+                <form>
+                    <input type="text" placeholder="Search..." name="search" id="searchBar">
 
-            <div class="listedItem">
-                <div class="listingName">
-                    <h3>Listing 2</h3>
-                </div>
-                <div class="listingImg"></div>
-                <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
-            </div>
+                    <select name="seats" id="dropdown">
+                        <option value="placeholder">Seats</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
 
-            <div class="listedItem">
-                <div class="listingName">
-                    <h3>Listing 3</h3>
-                </div>
-                <div class="listingImg"></div>
-                <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
-            </div>
+                    <select name="price" id="dropdown">
+                        <option value="placeholder">Price</option>
+                        <option value="1">Under $30</option>
+                        <option value="2">$30 to $40</option>
+                        <option value="3">$40 to $50</option>
+                        <option value="4">$50 to $60</option>
+                        <option value="5">$60 to $70</option>
+                        <option value="6">$70 and above</option>
+                    </select>
 
-            <div class="listedItem">
-                <div class="listingName">
-                    <h3>Listing 4</h3>
-                </div>
-                <div class="listingImg"></div>
-                <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
-            </div>
+                    <select name="sqft" id="dropdown">
+                        <option value="placeholder">Square Feet</option>
+                        <option value="1">Under 100sqft</option>
+                        <option value="2">100sqft to 150sqft</option>
+                        <option value="3">150sqft to 200sqft</option>
+                        <option value="4">200sqft to 250sqft</option>
+                        <option value="5">250sqft to 300sqft</option>
+                        <option value="6">300sqft and above</option>
+                    </select>
 
-            <div class="listedItem">
-                <div class="listingName">
-                    <h3>Listing 5</h3>
-                </div>
-                <div class="listingImg"></div>
-                <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
-            </div>
+                    <input type="text" placeholder="Location" name="location" id="location">
 
-            <div class="listedItem">
-                <div class="listingName">
-                    <h3>Listing 6</h3>
-                </div>
-                <div class="listingImg"></div>
-                <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
+                    <button type="submit" id="searchBtn"><a href="2_propertyList.html">Search</a></button>
+                </form>
             </div>
-
-            <div class="listedItem">
-                <div class="listingName">
-                    <h3>Listing 7</h3>
+            <div class="Listings">
+                <div class="listedItem">
+                    <div class="listingName">
+                        <h3>Listing 1</h3>
+                    </div>
+                    <div class="listingImg"></div>
+                    <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
                 </div>
-                <div class="listingImg"></div>
-                <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
-            </div>
 
-            <div class="listedItem">
-                <div class="listingName">
-                    <h3>Listing 8</h3>
+                <div class="listedItem">
+                    <div class="listingName">
+                        <h3>Listing 2</h3>
+                    </div>
+                    <div class="listingImg"></div>
+                    <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
                 </div>
-                <div class="listingImg"></div>
-                <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
+
+                <div class="listedItem">
+                    <div class="listingName">
+                        <h3>Listing 3</h3>
+                    </div>
+                    <div class="listingImg"></div>
+                    <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
+                </div>
+
+                <div class="listedItem">
+                    <div class="listingName">
+                        <h3>Listing 4</h3>
+                    </div>
+                    <div class="listingImg"></div>
+                    <button type="submit" id="viewListing"><a href="2_reserveList.html">View listing</a></button>
+                </div>
             </div>
         </div>
+        
     </body>
-
 
     <footer>
     </footer>
