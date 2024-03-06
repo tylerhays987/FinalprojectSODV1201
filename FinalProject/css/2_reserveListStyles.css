@@ -1,55 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 li {
-  background-color: #deaa88;
   display: inline-block;
-  position: center;
-  margin: 25px 25px;
-}
-
-body {
-  background-color: #EAD2A8;
-  padding: 25px;
-  color: black;
-}
-
-header {
-  background-color: #deaa88;
-  text-align: center;
-  color: black;
-}
-
-hr{
-  border: 2px solid #deaa88;
 }
 
 a{
   text-decoration: none;
 }
 
+a:visited{
+  text-decoration: none;
+  color:rgb(39, 39, 39);
+}
+
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(68, 81, 121);
+}
+
+.welcomeBar{
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+
+  background-color: white;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid rgb(39, 39, 39);
+  margin: 0px;
+}
+
+.mainSection{
+  background-color: rgb(185, 191, 207);
+  margin-right: auto;
+  margin-left: auto;
+  width: 85%;
+  height: 700px;
+  border: 2px solid rgb(39, 39, 39);
+  border-top: 0px;
+}
+
+#backBtn{
+  height: 35px;
+  width: 5%;
+  position: relative;
+  left: 15px;
+  top: 15px;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid rgb(68, 81, 121);
+  font-family: "Kanit", sans-serif;
+}
 
 #propertyImg{
-  position: absolute;
+  position: relative;
   left: 100px;
-  top: 150px;
+  top: 100px;
   width: 40%;
   height: 400px;
-  background-color: #deaa88;
+  border: 2px dashed rgb(68, 81, 121);
+  background-color:rgb(255, 236, 215);
 }
 
 #propertyDesc{
   position: absolute;
-  right: 100px;
-  top: 150px;
+  right: 175px;
+  top: 215px;
   width: 40%;
   height: 396px;
-  border: 2px solid #deaa88;
+  border: 2px solid rgb(68, 81, 121);
+  background-color: white;
 }
 
 #property{
   padding: 5px 20px 0px 20px;
+  font-family: "Kanit", sans-serif;
 }
 
 label{
-  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -58,12 +93,9 @@ label{
   margin-top: 40px;
 }
 
-#backBtn{
-  height: 35px;
-  width: 5%;
-  background-color: white;
-  border-radius: 0px;
-  border: 2px solid #deaa88;
+#date, #startTime, #endTime{
+  border: 2px solid rgb(68, 81, 121);
+  font-family: "Kanit", sans-serif;
 }
 
 .contact{
@@ -76,7 +108,14 @@ label{
   height: 35px;
   background-color: white;
   border-radius: 0px;
-  border: 2px solid #deaa88;
+  border: 2px solid rgb(68, 81, 121);
+}
+
+#contactBtn:hover{
+  border: 2px solid rgb(68, 81, 121);
+  background-color:rgb(68, 81, 121);
+  font-style: italic;
+  color: white;
 }
 
 .confirm{
@@ -89,5 +128,12 @@ label{
   height: 35px;
   background-color: white;
   border-radius: 0px;
-  border: 2px solid #deaa88;
+  border: 2px solid rgb(68, 81, 121);
+}
+
+#confirmBtn:hover{
+  border: 2px solid rgb(68, 81, 121);
+  background-color:rgb(68, 81, 121);
+  font-style: italic;
+  color: white;
 }
