@@ -7,10 +7,6 @@ body {
   background-color: rgb(68, 81, 121);
 }
 
-a{
-  text-decoration: none;
-}
-
 .welcomeBar{
   font-family: "Kanit", sans-serif;
   font-weight: 600;
