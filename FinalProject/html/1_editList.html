@@ -8,11 +8,12 @@
     <script src = "../javaScript/1_editListScript.js"> </script>
 </head>
     <header>
+  <div class="welcomeBar">
         <h1>Listing</h1>
+  </div>
     </header>
     <body>
-        <h2>Property Listing Management</h2>
-
+    <div class="mainSection">
         <table>
             <tr>
                 <th>Address</th>
@@ -29,18 +30,18 @@
                 <td>Yes</td>
                 <td>Yes</td>
                 <td>
-                    <button onclick="editListing(1)">Edit</button>
-                    <button onclick="deleteListing(1)">Delete</button>
+                    <button id="editBtn" onclick="editListing(1)">Edit</button>
+                    <button id="deleteBtn" onclick="deleteListing(1)">Delete</button>
                 </td>
             </tr>
             <!-- Add more rows as needed -->
         </table>
 
-        <button onclick="sortListings()">Sort</button>
+        <button id="sortBtn" onclick="sortListings()">Sort</button>
   <a href="1_owner.html">
-      <button id="ownerbtn" title="Back to Owner page">Back</button>
+      <button id="ownerBtn" title="Back to Owner page">Back</button>
   </a>
-
+</div>
     </body>
     </html>
 </body>
