@@ -40,11 +40,17 @@ form{
   padding-top: 100px;
 }
 
+label{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  color: white;
+}
+
 #property{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 13%;
+  height: 36.5px;
+  width: 8%;
   background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
@@ -54,8 +60,8 @@ form{
 #workspace_type{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 13%;
+  height: 36.5px;
+  width: 8%;
   background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
@@ -65,8 +71,8 @@ form{
 #seating_capacity{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 13%;
+  height: 36.5px;
+  width: 8%;
   background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
@@ -76,8 +82,8 @@ form{
 #availability_date{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 13%;
+  height: 36.5px;
+  width: 8%;
   background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
@@ -87,8 +93,8 @@ form{
 #lease_term{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 13%;
+  height: 36.5px;
+  width: 8%;
   background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
@@ -98,8 +104,8 @@ form{
 #price{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 13%;
+  height: 36.5px;
+  width: 8%;
   background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
@@ -109,8 +115,8 @@ form{
 #Description{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 13%;
+  height: 36.5px;
+  width: 30%;
   background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
