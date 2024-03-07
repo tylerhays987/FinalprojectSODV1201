@@ -36,47 +36,88 @@ body {
   text-align: center;
 }
 
-table{
+form{
   padding-top: 100px;
-  margin-left: 450px;
 }
 
-table tbody tr {
+#property{
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 75px;
-  width: 59%;
+  width: 17%;
   background-color: white;
-  border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
   margin-bottom: 0px;
 }
 
-#editBtn{
+#workspace_type{
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 75px;
-  width: 59%;
+  width: 17%;
   background-color: white;
-  border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
   margin-bottom: 0px;
 }
 
-#deleteBtn{
+#seating_capacity{
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 75px;
-  width: 59%;
+  width: 17%;
   background-color: white;
-  border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
   margin-bottom: 0px;
 }
-#sortBtn{
+
+#availability_date{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 75px;
+  width: 17%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+#lease_term{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 75px;
+  width: 16%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+#price{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 75px;
+  width: 16%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+#Description{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 75px;
+  width: 16%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+#submitBtn{
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 75px;
