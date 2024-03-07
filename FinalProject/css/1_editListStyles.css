@@ -36,88 +36,47 @@ body {
   text-align: center;
 }
 
-form{
+table{
   padding-top: 100px;
+  margin-left: 450px;
 }
 
-#property{
+table tbody tr {
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 75px;
-  width: 17%;
+  width: 59%;
   background-color: white;
+  border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
   margin-bottom: 0px;
 }
 
-#workspace_type{
+#editBtn{
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 75px;
-  width: 17%;
+  width: 59%;
   background-color: white;
+  border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
   margin-bottom: 0px;
 }
 
-#seating_capacity{
+#deleteBtn{
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 75px;
-  width: 17%;
+  width: 59%;
   background-color: white;
+  border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
   margin-bottom: 0px;
 }
-
-#availability_date{
-  text-align: center;
-  font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 17%;
-  background-color: white;
-  border: 2px solid rgb(39, 39, 39);
-  margin: 5px;
-  margin-bottom: 0px;
-}
-
-#lease_term{
-  text-align: center;
-  font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 16%;
-  background-color: white;
-  border: 2px solid rgb(39, 39, 39);
-  margin: 5px;
-  margin-bottom: 0px;
-}
-
-#price{
-  text-align: center;
-  font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 16%;
-  background-color: white;
-  border: 2px solid rgb(39, 39, 39);
-  margin: 5px;
-  margin-bottom: 0px;
-}
-
-#Description{
-  text-align: center;
-  font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 16%;
-  background-color: white;
-  border: 2px solid rgb(39, 39, 39);
-  margin: 5px;
-  margin-bottom: 0px;
-}
-
-#submitBtn{
+#sortBtn{
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 75px;
@@ -144,3 +103,4 @@ form{
 /*
   Background image credit: https://unsplash.com/pt-br/fotografias/mesa-de-conferencia-e-cadeiras-ovais-de-madeira-marrom-dentro-da-sala-de-conferencias-GWe0dlVD9e0
 */
+
