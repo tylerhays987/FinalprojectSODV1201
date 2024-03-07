@@ -56,8 +56,8 @@ table tbody tr {
 #editBtn{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 30%;
   background-color: white;
   border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
@@ -68,8 +68,8 @@ table tbody tr {
 #deleteBtn{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 30%;
   background-color: white;
   border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
@@ -79,8 +79,8 @@ table tbody tr {
 #sortBtn{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 30%;
   background-color: white;
   border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
@@ -91,8 +91,8 @@ table tbody tr {
 #ownerBtn{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 30%;
   background-color: white;
   border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
