@@ -65,8 +65,8 @@ body {
 #password{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 30%;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
   margin-bottom: 0px;
@@ -75,8 +75,8 @@ body {
 #phone{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 30%;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
   margin-bottom: 0px;
@@ -85,8 +85,8 @@ body {
 #email{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 30%;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
   margin-bottom: 0px;
@@ -95,8 +95,8 @@ body {
 #name{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 30%;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
   margin-bottom: 0px;
@@ -105,7 +105,7 @@ body {
 #role{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
+  height: 36.5px;
   width: 13%;
   background-color: white;
   border: 2px solid rgb(39, 39, 39);
