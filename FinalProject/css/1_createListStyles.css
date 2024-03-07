@@ -40,56 +40,60 @@ form{
   padding-top: 100px;
 }
 
+label{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  color: white;
+}
+
 #address{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 8%;
+  background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
-  margin-bottom: 0px;
 }
 
 #neighborhood{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 8%;
+  background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
-  margin-bottom: 0px;
 }
 
 #area{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 10%;
+  background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
-  margin-bottom: 0px;
 }
 
 #parking{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 13%;
+  height: 36.5px;
+  width: 8%;
   background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
-  margin-bottom: 0px;
 }
 
 #public_transportation{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 13%;
+  height: 36.5px;
+  width: 8%;
   background-color: white;
   border: 2px solid rgb(39, 39, 39);
   margin: 5px;
-  margin-bottom: 0px;
 }
 
 #submitBtn{
