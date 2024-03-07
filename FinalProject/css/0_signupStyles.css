@@ -116,8 +116,8 @@ body {
 #submitBtn{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 30%;
   background-color: white;
   border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
@@ -128,8 +128,8 @@ body {
 #backBtn{
   text-align: center;
   font-family: "Kanit", sans-serif;
-  height: 75px;
-  width: 59%;
+  height: 36.5px;
+  width: 30%;
   background-color: white;
   border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
