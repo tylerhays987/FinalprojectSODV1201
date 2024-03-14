@@ -100,7 +100,7 @@ label{
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 36.5px;
-  width: 30%;
+  width: 15%;
   background-color: white;
   border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
@@ -112,7 +112,7 @@ label{
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 36.5px;
-  width: 30%;
+  width: 15%;
   background-color: white;
   border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
@@ -123,8 +123,3 @@ label{
 /*
   Background image credit: https://unsplash.com/pt-br/fotografias/mesa-de-conferencia-e-cadeiras-ovais-de-madeira-marrom-dentro-da-sala-de-conferencias-GWe0dlVD9e0
 */
-
-a{
-  text-decoration: none;
-}
-
