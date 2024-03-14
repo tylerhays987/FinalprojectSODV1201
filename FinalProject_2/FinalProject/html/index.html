@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shared Workspace</title>
+  <link rel="stylesheet" href="../css/indexStyles.css">
+</head>
+
+<body>
+  <header>
+    <div class="welcomeBar">
+      <h1 class="index">BVC Shared Workspace</h1>
+      <h1 class="login" style="display: none;">Login Page</h1>
+      <h1 class="signup" style="display: none;">Sign-up Page</h1>
+      <h1 class="owner" style="display: none;">Owner Page</h1>
+      <h1 class="coworker" style="display: none;">Coworker Page</h1>
+      <!-- Navigation links -->
+      <div class="navLinks">
+        <ul>
+          <li><a href="#" id="login-btn">Login</a></li>
+          <li> / </li>
+          <li><a href="#" id="signup-btn">Sign Up</a></li>
+          <li> / </li>
+          <li><a href="#" id="logout-btn">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="mainSection">
+
+      <!-- Login Form -->
+      <div class="login" style="display: none;">
+        <form id="loginForm">
+          <input type="email" id="loginEmail" name="email" placeholder="Email" required>
+          <input type="password" id="loginPassword" name="password" placeholder="Password" required>
+          <input type="submit" id="loginBtn" value="Confirm">
+          <button class="backBtn" type="button">Back</button>
+        </form>
+      </div>
+
+      <!-- Sign-up Form -->
+      <div class="signup" style="display: none;">
+        <form id="signupForm">
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="text" id="phone" name="phone" placeholder="Phone" required>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+          <select id="role" name="role" required>
+            <option value="owner">Owner</option>
+            <option value="coworker">Coworker</option>
+          </select>
+          <input type="submit" id="signupBtn" value="Confirm">
+          <button class="backBtn" type="button">Back</button>
+        </form>
+      </div>
+
+      <!-- Owner Page -->
+      <div class="owner" style="display: none;">
+        <div id="createFormSection" style="display: none;">
+          <form id="propertyForm">
+            <input type="hidden" id="propertyId" name="propertyId">
+            <input type="hidden" id="propertyId_owner" name="propertyId_owner"> <!-- Patricia to be used in booking coworker-->            
+
+            <input type="text" id="address" name="address" placeholder="Address" required>
+            <input type="text" id="neighborhood" name="neighborhood" placeholder="Neighborhood" required>
+            <input type="number" id="area" name="area" placeholder="Area (in square meters)" required>
+            <div class="dropdown">
+              <label for="parking">Parking included:</label>
+              <select id="parking" name="parking" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+              <label for="public_transportation">Reachable by public transportation:</label>
+              <select id="public_transportation" name="public_transportation" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+
+            <!-- Workspace Details -->
+            <h2>Workspace Details</h2>
+            <label for="workspace_type">Workspace Type:</label>
+            <select id="workspace_type" name="workspace_type" required>
+              <option value="meeting_room">Meeting Room</option>
+              <option value="private_office">Private Office Room</option>
+              <option value="open_desk">Desk in Open Work Area</option>
+            </select>
+
+            <label for="seating_capacity">Seating Capacity:</label>
+            <input type="number" id="seating_capacity" name="seating_capacity" required>
+
+            <label for="availability_date">Availability Date:</label>
+            <input type="date" id="availability_date" name="availability_date" required>
+
+            <label for="lease_term">Lease Term:</label>
+            <select id="lease_term" name="lease_term" required>
+              <option value="day">Day</option>
+              <option value="week">Week</option>
+              <option value="month">Month</option>
+            </select>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="brief description">Description:</label>
+            <input type="text" id="Description" name="Description" required>
+            <!-- End of Workspace Details -->
+
+            <button id="submitBtn" type="submit">Submit</button>            
+            <button id="backBtn" type="button">Back</button>
+          </form>
+        </div>
+
+        <!-- Listings Section -->
+        <div id="listingsSection">
+          <!-- Listings will be populated dynamically by JS (1_ownerScript.js)-->
+        </div>
+
+        <div id="navLinks">
+          <ul>
+            <li class="ownerListingNav"><button onclick="showCreateForm()">Create New Listing</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Coworker Page -->
+      <div class="coworker" style="display: none;">
+        <div class="searchBar">
+          <form id="searchForm">
+            <input type="text" id="searchBar" placeholder="Search by address">
+            <br>
+            <select name="seats" id="seatsDropdown">
+              <option value="placeholder">Seats</option>
+            </select>
+        
+            <select name="price" id="priceDropdown">
+              <option value="placeholder">Price</option>
+            </select>
+        
+            <select name="sqft" id="sqftDropdown">
+              <option value="placeholder">Square Feet</option>
+            </select>
+        
+            <input type="text" placeholder="Location" name="location" id="location">
+            <br>
+            <button type="submit" id="searchBtn">Search</button>
+          </form>
+        </div>
+
+        <h2>Spaces Available</h2>
+        <div class="Listings">
+          <!-- Property listings for coworker -->
+        </div>
+
+        <!-- Add a container for property listings -->
+        <div class="coworkerListings">
+          <!-- Property listings for coworker will be dynamically added here -->
+        </div>
+
+        <div id="reservation" style="display: none;">
+          <h3 id="propertyName">Property Name</h3>
+          <p id="propertyDescription">Property Description</p>
+          <form id="reservationForm">
+              <label for="reservationDate">Date:</label>
+              <input type="date" id="reservationDate" name="reservationDate">
+              <label for="startTime">Start time:</label>
+              <input type="time" id="startTime" name="startTime">
+              <label for="endTime">End time:</label>
+              <input type="time" id="endTime" name="endTime">
+              <button type="submit" class="reserveBtn" id="reserveBtn">Reserve</button>
+              <button type="button" id="cancelReservationBtn">Cancel</button>
+              <button type="button" id="backBtnBook">Back</button>  <!-- Patricia -->
+          </form>
+      </div>
+      <div id="ownerContact"> <!-- Patricia - To display owner contact when book a space-->
+      </div>
+
+      </div>
+  </main>
+
+  <script src="../javaScript/jquery-3.7.1.min.js"></script>
+  <script src="../javaScript/indexScript.js"></script>
+
+</body>
+
+</html>
