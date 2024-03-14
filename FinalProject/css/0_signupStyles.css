@@ -37,30 +37,7 @@ body {
   text-align: center;
 }
 
-#submitBtn{
-  text-align: center;
-  font-family: "Kanit", sans-serif;
-  height: 36.5px;
-  width: 30%;
-  background-color: white;
-  border-radius: 0px;
-  border: 2px solid rgb(39, 39, 39);
-  margin: 5px;
-  margin-bottom: 0px;
 
-}
-
-#backBtn{
-  text-align: center;
-  font-family: "Kanit", sans-serif;
-  height: 36.5px;
-  width: 30%;
-  background-color: white;
-  border-radius: 0px;
-  border: 2px solid rgb(39, 39, 39);
-  margin: 5px;
-  margin-bottom: 0px;
-}
 
 #password{
   text-align: center;
@@ -117,7 +94,7 @@ body {
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 36.5px;
-  width: 30%;
+  width: 15%;
   background-color: white;
   border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
@@ -129,7 +106,7 @@ body {
   text-align: center;
   font-family: "Kanit", sans-serif;
   height: 36.5px;
-  width: 30%;
+  width: 15%;
   background-color: white;
   border-radius: 0px;
   border: 2px solid rgb(39, 39, 39);
