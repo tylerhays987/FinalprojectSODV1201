@@ -240,8 +240,8 @@ $(document).ready(function () {
                 <p>Public Transportation: ${property.public_transportation}</p>
                 <p>Workspace Details:</p>
                 <ul>
-                    <li>Meeting Room - Capacity: ${property.workspace_details.meeting_room.seating_capacity}, Price: $${property.workspace_details.meeting_room.price}</li>
-                    <li>Private Office - Capacity: ${property.workspace_details.private_office.seating_capacity}, Price: $${property.workspace_details.private_office.price}</li>
+                    <li>Meeting Room - Capacity: ${property.workspace_details.meeting_room.seating_capacity}, Price: $${property.workspace_details.meeting_room.price}</li><br>
+                    <li>Private Office - Capacity: ${property.workspace_details.private_office.seating_capacity}, Price: $${property.workspace_details.private_office.price}</li><br>
                     <li>Open Desk - Capacity: ${property.workspace_details.open_desk.seating_capacity}, Price: $${property.workspace_details.open_desk.price}</li>
                 </ul>
                 <button class="reservePropertyBtn" data-property-id="${property.id}">Reserve</button>
