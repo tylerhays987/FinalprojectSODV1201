@@ -52,32 +52,48 @@ a:hover {
   text-align: center;
 }
 
-#navLinks {
-  text-align: center;
-  margin: auto;
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-  padding-top: 3px;
-}
 
-.Listings {
+  /* login page */
+.backBtn {
+  /* height: 30px; */
+  width: 40%;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid rgb(68, 81, 121);
+  color: rgb(68, 81, 121);
+  margin-left: 30%;
+  margin-right: 30%;
   margin-top: 20px;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 10px;
-  gap: 50px 50px;
+  font-family: "Kanit", sans-serif;
 }
 
-.ownerListingNav {
-  text-align: center;
-  display: inline-block;
-  margin-right: 30px;
-  margin-left: 30px;
-  position: relative;
+#backBtn {
+  /* height: 30px; */
+  width: 40%;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid rgb(68, 81, 121);
+  color: rgb(68, 81, 121);
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 20px;
+  font-family: "Kanit", sans-serif;
 }
 
-button {
+#submitBtn {
+  /* height: 30px; */
+  width: 40%;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid rgb(68, 81, 121);
+  color: rgb(68, 81, 121);
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 20px;
+  font-family: "Kanit", sans-serif;
+}
+
+#loginBtn {
   /* height: 30px; */
   width: 40%;
   background-color: white;
@@ -89,13 +105,224 @@ button {
   margin-top: 45px;
   font-family: "Kanit", sans-serif;
 }
-
+#loginBtn:hover {
+  border: 2px solid rgb(68, 81, 121);
+  background-color: rgb(68, 81, 121);
+  color: white;
+  font-style: italic;
+}
 button:hover {
   border: 2px solid rgb(68, 81, 121);
   background-color: rgb(68, 81, 121);
   color: white;
   font-style: italic;
 }
+
+#loginEmail{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 30%;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+#loginPassword{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 30%;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+  /* signup page */
+  #password{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    height: 36.5px;
+    width: 30%;
+    border: 2px solid rgb(39, 39, 39);
+    margin: 5px;
+    margin-bottom: 0px;
+  }
+
+  #phone{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    height: 36.5px;
+    width: 30%;
+    border: 2px solid rgb(39, 39, 39);
+    margin: 5px;
+    margin-bottom: 0px;
+  }
+
+  #email{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    height: 36.5px;
+    width: 30%;
+    border: 2px solid rgb(39, 39, 39);
+    margin: 5px;
+    margin-bottom: 0px;
+  }
+
+  #name{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    height: 36.5px;
+    width: 30%;
+    border: 2px solid rgb(39, 39, 39);
+    margin: 5px;
+    margin-bottom: 0px;
+  }
+
+  #role{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    height: 36.5px;
+    width: 13%;
+    background-color: white;
+    border: 2px solid rgb(39, 39, 39);
+    margin: 5px;
+    margin-bottom: 0px;
+  }
+
+  #signupBtn{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    height: 36.5px;
+    width: 15%;
+    background-color: white;
+    border-radius: 0px;
+    border: 2px solid rgb(39, 39, 39);
+    margin: 5px;
+    margin-bottom: 0px;
+  }
+
+
+  /* workspace Details page */
+
+#address{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 30%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
+
+#neighborhood{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 30%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
+
+#area{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 10%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
+
+#parking{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 8%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
+
+#public_transportation{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 8%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
+
+#workspace_type{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 8%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
+
+#seating_capacity{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 8%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
+
+#availability_date{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 20%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
+
+#lease_term{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 10%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
+
+#price{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 8%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
+
+#Description{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 36.5px;
+  width: 30%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
+
+
+
+
+
+
+
+
+
 /*
   Background image credit: https://unsplash.com/pt-br/fotografias/mesa-de-conferencia-e-cadeiras-ovais-de-madeira-marrom-dentro-da-sala-de-conferencias-GWe0dlVD9e0
 */
