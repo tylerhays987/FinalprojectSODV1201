@@ -84,6 +84,13 @@ a:hover {
   font-family: "Kanit", sans-serif;
 }
 
+#backBtn:hover{
+  border: 2px solid rgb(68, 81, 121);
+  background-color: rgb(68, 81, 121);
+  color: white;
+  font-style: italic;
+}
+
 #submitBtn {
   /* height: 30px; */
   width: 40%;
@@ -95,6 +102,13 @@ a:hover {
   margin-right: 30%;
   margin-top: 20px;
   font-family: "Kanit", sans-serif;
+}
+
+#submitBtn:hover{
+  border: 2px solid rgb(68, 81, 121);
+  background-color: rgb(68, 81, 121);
+  color: white;
+  font-style: italic;
 }
 
 #loginBtn {
@@ -133,13 +147,6 @@ a:hover {
 }
 
 #ownerListingBtn:hover{
-  border: 2px solid rgb(68, 81, 121);
-  background-color: rgb(68, 81, 121);
-  color: white;
-  font-style: italic;
-}
-
-button:hover {
   border: 2px solid rgb(68, 81, 121);
   background-color: rgb(68, 81, 121);
   color: white;
