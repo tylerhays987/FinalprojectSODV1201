@@ -39,8 +39,7 @@ a:hover {
 }
 
 .mainSection {
-  background-image: url('../images/backgroundOffice.jpeg');
-  background-size: 100%;
+  background-color:rgb(255, 246, 246);
   width: 85%;
   height: 700px;
   border: 2px solid rgb(39, 39, 39);
@@ -54,6 +53,11 @@ a:hover {
 
 
   /* login page */
+#loginForm, #signupForm{
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .backBtn {
   /* height: 30px; */
   width: 40%;
@@ -105,17 +109,46 @@ a:hover {
   margin-top: 45px;
   font-family: "Kanit", sans-serif;
 }
+
 #loginBtn:hover {
   border: 2px solid rgb(68, 81, 121);
   background-color: rgb(68, 81, 121);
   color: white;
   font-style: italic;
 }
+
+#ownerListingBtn{
+  width: 30%;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid rgb(68, 81, 121);
+  color: rgb(68, 81, 121);
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Kanit", sans-serif;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#ownerListingBtn:hover{
+  border: 2px solid rgb(68, 81, 121);
+  background-color: rgb(68, 81, 121);
+  color: white;
+  font-style: italic;
+}
+
 button:hover {
   border: 2px solid rgb(68, 81, 121);
   background-color: rgb(68, 81, 121);
   color: white;
   font-style: italic;
+}
+
+.login, .signup, .owner{
+  text-align: center;
+  padding-top: 30px;
 }
 
 #loginEmail{
@@ -315,14 +348,57 @@ button:hover {
   margin: 5px;
 }
 
+/* co worker section*/
+.searchBar{
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  text-align: center;
+}
 
+#searchBar{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 60px;
+  width: 58.5%;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
 
+#location{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 59px;
+  width: 17%;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
 
+#seatsDropdown, #priceDropdown, #sqftDropdown{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 65px;
+  width: 13%;
+  background-color: white;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
 
+#searchBtn{
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  height: 65px;
+  width: 20%;
+  background-color: white;
+  border-radius: 0px;
+  border: 2px solid rgb(39, 39, 39);
+  margin: 5px;
+}
 
-
-
-
-/*
-  Background image credit: https://unsplash.com/pt-br/fotografias/mesa-de-conferencia-e-cadeiras-ovais-de-madeira-marrom-dentro-da-sala-de-conferencias-GWe0dlVD9e0
-*/
+#searchBtn:hover{
+  border: 2px solid rgb(68, 81, 121);
+  background-color: rgb(68, 81, 121);
+  color: white;
+  font-style: italic;
+}
