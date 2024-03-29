@@ -232,7 +232,7 @@ $(document).ready(function () {
         coworkerListingsContainer.empty();
         propertiesData.forEach(property => {
             let propertyDetailsHtml = `
-            <div>
+            <div id="coworkerListings">
                 <p>Address: ${property.address}</p>
                 <p>Neighborhood: ${property.neighborhood}</p>
                 <p>Area: ${property.area} sq. ft.</p>
