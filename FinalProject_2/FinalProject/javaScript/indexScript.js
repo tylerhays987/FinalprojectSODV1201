@@ -210,8 +210,9 @@ $(document).ready(function () {
         propertiesData.forEach(property => {
             if (property.owner === ownerId) {
                 ownerListingsContainer.append(`
-                <div>
+                <div id="ownerListings">
                     <span>${property.address}</span>
+                    <br>
                     <button class="editPropertyBtn" data-property-id="${property.id}">Edit</button>
                     <button class="deletePropertyBtn" data-property-id="${property.id}">Delete</button>
                 </div>`);
