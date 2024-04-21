@@ -68,17 +68,7 @@ a:hover, #logout-btn:hover {
   padding-right: 20px;
   margin-top: 0px;
   text-align: center;
-  height: 100%;
-}
-
-
-  /* login page */
-.login {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  height: 60%;
 }
 
 #loginForm, #signupForm{
