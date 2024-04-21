@@ -1,24 +1,17 @@
 async function getProperties(filters = undefined) {
   try {
     let urlFilters;
-    /*
-    if(filters) {
-      //iterar os fitros
-      adicionar os filtros usando   new URLSearchParams({
-          foo: 'value',
-          bar: 2,
-      }))
+    if (filters) {
+      // Convert the filters object into URLSearchParams format
+      urlFilters = new URLSearchParams(filters);
+  }
 
-      urlFilters = new URLSearchParams(filtro)
-    }
-    
-    */
-    const url = urlFilters ?
+  const url = urlFilters ?
       `http://localhost:3000/properties?${urlFilters}`
       :
-      'http://localhost:3000/properties'
+      'http://localhost:3000/properties';
 
-    const response = await fetch(url)
+  const response = await fetch(url);
 
     if (!response.ok) {
       const parsedError = await response.json()
@@ -33,6 +26,8 @@ async function getProperties(filters = undefined) {
     console.error(error)
   }
 }
+
+
 
 async function getPropertyReservationInfo(id) {
   try {
@@ -96,8 +91,6 @@ async function bookWorkspace(bookingData) {
   }
 }
 
-
-
 $(document).ready(function () {
   const currentUser = localStorage.getItem("currentUser");
 
@@ -150,8 +143,6 @@ $(document).ready(function () {
 
     // Hide the create form section
     $("#createFormSection").hide(); // Patricia - hide form of property addition
-
-
   }
 
   // Function to populate property listings for coworkers
@@ -193,34 +184,12 @@ $(document).ready(function () {
     $(".coworker").show()
   }
 
-  // function search() {
-  //   const searchBar = document.getElementById("searchBar").value;
-
-  //   // Fetch properties data from local storage
-  //   propertiesData = JSON.parse(localStorage.getItem("propertiesData"));
-
-  //   // Filter properties based on the search input
-  //   let results = propertiesData.filter((property) =>
-  //     property.address.toLowerCase().includes(searchBar.toLowerCase())
-  //   );
-
-  //   // Display search results
-  //   const searchResultsList = document.getElementById("searchResultsList");
-  //   searchResultsList.innerHTML = "";
-
-  //   results.forEach((property) => {
-  //     const li = document.createElement("li");
-  //     li.textContent = `${property.address}`;
-
-  //     // Create the "View More" button and add an onclick event
-  //     const viewMore = document.createElement("button");
-  //     viewMore.textContent = "View More";
-  //     viewMore.onclick = () => fetchProperty(property.id); // Assuming fetchProperty is a function to get more details
-
-  //     li.appendChild(viewMore);
-  //     searchResultsList.appendChild(li);
-  //   });
-  // }
+  // Function to handle the search form submission
+  $("#searchForm").submit(function (e) {
+    e.preventDefault();
+    const searchTerm = $("#searchBar").val().trim(); // Get the search term from the input field
+    populateCoworkerListings(searchTerm); // Call the function with the search term
+  });
 
   $(document).on("click", ".reservePropertyBtn", async function () {
 
@@ -242,7 +211,6 @@ $(document).ready(function () {
     }
   });
 
-  //Patricia - begin
   // Function to handle both cancel and back buttons of Booking
   function handleCancelBackButtons_Booking() {
     // Show the search bar and coworker listing
@@ -256,12 +224,10 @@ $(document).ready(function () {
   $("#cancelReservationBtn, #backBtnBook").click(
     handleCancelBackButtons_Booking
   );
-  // Patricia - end
 
   // Event handler for the reservation form submission
   $("#reservationForm").submit(async function (e) {
     e.preventDefault();
-    // Logic to handle reservation submission goes here
 
     const newBooking = {
       id_user: currentUser.id_user,
@@ -280,7 +246,6 @@ $(document).ready(function () {
             <p><strong>Email:</strong> <a href="mailto:${result.email}" style="color: blue; text-decoration: none;">${result.email}</a></p>
         `);
   });
-
 
   // Event handler for the back button click
   $("#backBtn").click(function () {
@@ -306,7 +271,6 @@ $(document).ready(function () {
     await deleteProperty(propertyId);
     window.location.assign('index.html')
   });
-
 
   // Filter properties based on selected options
   let filterProperties = () => {
@@ -342,11 +306,4 @@ $(document).ready(function () {
     // Display filtered properties (you can customize this according to your needs)
     console.log("Filtered Properties:", filteredProperties);
   };
-
-  //populateDropdowns(); // Populate dropdown menus with property details
-
-  $("#searchForm").submit(function (e) {
-    e.preventDefault();
-    filterProperties(); // Filter properties based on selected options
-  });
 });
