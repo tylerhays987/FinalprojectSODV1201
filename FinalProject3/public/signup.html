@@ -9,29 +9,48 @@
 </head>
 
 <body>
-    <!-- Sign-up Form -->
-    <div class="signup">
-        <h1>Sign Up Page</h1>
-        <form id="signupForm">
-            <!-- <input type="text" id="name" name="name" placeholder="Name" autocomplete="cc-name" required> -->
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            <!-- <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required> -->
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <br>
-            <!-- <input type="text" id="phone" name="phone" placeholder="Phone" autocomplete="tel-area-code" required> -->
-            <input type="text" id="phone" name="phone" placeholder="Phone" required>
-            <!-- <input type="password" id="password" name="password" placeholder="Password" autocomplete="new-password" required> -->
-            <input type="password" id="password" name="password" placeholder="Password" required>
-            <br>
-            <select id="role" name="role" required>
-                <option value="owner">Owner</option>
-                <option value="coworker">Coworker</option>
-            </select>
-            <br>
-            <input type="submit" id="signupBtn" value="Confirm">
-            <button class="backBtn" type="button">Back</button>
-        </form>
-    </div>
+    <header>
+        <div class="welcomeBar">
+            <h1 class="index">BVC Shared Workspace</h1>
+            <h1 class="signup" style="display: none;">Sign-up Page</h1>
+            <h1 class="owner" style="display: none;">Owner Page</h1>
+            <h1 class="coworker" style="display: none;">Coworker Page</h1>
+            <!-- Navigation links -->
+            <div class="navLinks">
+                <ul>
+                    <li><a href="./login.html" id="login-btn">Login</a></li>
+                    <li> / </li>
+                    <li><a href="./signup.html" id="signup-btn">Sign Up</a></li>
+                    <li class="logout-fn" style="display: none;"> / </li>
+                    <li class="logout-fn" style="display: none;"><button id="logout-btn"
+                            onclick="logoutUser()">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mainSection">
+            <div class="signup">
+                <h1>Sign Up Page</h1>
+                <form id="signupForm">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <br>
+                    <input type="text" id="phone" name="phone" placeholder="Phone" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <br>
+                    <select id="role" name="role" required>
+                        <option value="owner">Owner</option>
+                        <option value="coworker">Coworker</option>
+                    </select>
+                    <br>
+                    <input type="submit" id="signupBtn" value="Confirm">
+                    <button class="backBtn" type="button">Back</button>
+                </form>
+            </div>
+        </div>
+    </main>
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/user.js"></script>
 </body>
