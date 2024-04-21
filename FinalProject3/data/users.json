@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "id_user": 1,
+            "name": "John Doe",
+            "phone": "123-456-7890",
+            "email": "john@live.com",
+            "password": "1",
+            "role": "owner"
+        },
+        {
+            "id_user": 2,
+            "name": "Jane Smith",
+            "phone": "987-654-3210",
+            "email": "jane@example.com",
+            "password": "5678",
+            "role": "owner"
+        },
+        {
+            "id_user": 3,
+            "name": "Bob Brown",
+            "phone": "403-586-4567",
+            "email": "bob@example.com",
+            "password": "7890",
+            "role": "coworker"
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shared Workspace</title>
+  <link rel="stylesheet" href="css/indexStyles.css">
+</head>
+
+<body>
+  <header>
+    <div class="welcomeBar">
+      <h1 class="index">BVC Shared Workspace</h1>
+      <h1 class="signup" style="display: none;">Sign-up Page</h1>
+      <h1 class="owner" style="display: none;">Owner Page</h1>
+      <h1 class="coworker" style="display: none;">Coworker Page</h1>
+      <!-- Navigation links -->
+      <div class="navLinks">
+        <ul>
+          <li><a href="./login.html" id="login-btn">Login</a></li>
+          <li> / </li>
+          <li><a href="./signup.html" id="signup-btn">Sign Up</a></li>
+          <li class="logout-fn" style="display: none;"> / </li>
+          <li class="logout-fn" style="display: none;"><button id="logout-btn" onclick="logoutUser()">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="mainSection">
+      <!-- Owner Page -->
+      <div class="owner" style="display: none;">
+
+        <!-- Listings Section -->
+        <div id="listingsSection">
+          <!-- Listings will be populated dynamically by JS (1_ownerScript.js)-->
+        </div>
+
+        <div id="navLinks">
+          <ul>
+            <li class="ownerListingNav">
+              <button id="ownerListingBtn">Create New Listing</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Coworker Page -->
+      <div class="coworker" style="display: none;">
+        <div class="searchBar">
+          <form id="searchForm">
+            <input type="text" id="searchBar" placeholder="Search by address">
+            <br>
+            <select name="seats" id="seatsDropdown">
+              <option value="placeholder">Seats</option>
+            </select>
+
+            <select name="price" id="priceDropdown">
+              <option value="placeholder">Price</option>
+            </select>
+
+            <select name="sqft" id="sqftDropdown">
+              <option value="placeholder">Square Feet</option>
+            </select>
+
+            <input type="text" placeholder="Location" name="location" id="location">
+            <br>
+            <button type="submit" id="searchBtn" onclick="search()">Search</button>
+          </form>
+        </div>
+
+        <h2 id="titleHeading">Spaces Available</h2>
+        <div class="Listings">
+          <ul id="searchResultsList">
+            <!-- Search results will be dynamically added here -->
+          </ul>
+        </div>
+
+        <!-- Add a container for property listings -->
+        <div class="coworkerListings">
+          <!-- Property listings for coworker will be dynamically added here -->
+        </div>
+
+        <div id="reservation" style="display: none;">
+          <h3 id="propertyName">Property Name</h3>
+          <p id="propertyDescription">Property Description</p>
+          <form id="reservationForm">
+            <label for="reservationDate">Date:</label>
+            <input type="date" id="reservationDate" name="reservationDate">
+            <label for="startTime">Start time:</label>
+            <input type="time" id="startTime" name="startTime">
+            <label for="endTime">End time:</label>
+            <input type="time" id="endTime" name="endTime">
+            <br>
+            <input type="hidden" id="propertyId" name="propertyId" />
+            <button type="submit" class="reserveBtn" id="reserveBtn">Reserve</button>
+            <button type="button" id="cancelReservationBtn">Cancel</button>
+            <button type="button" id="backBtn">Back</button> <!-- Patricia -->
+          </form>
+        </div>
+        <div id="ownerContact"> <!-- Patricia - To display owner contact when book a space-->
+        </div>
+
+      </div>
+  </main>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="./js/user.js"></script>
+  <script src="js/indexScript.js"></script>
+
+</body>
+
+</html>
