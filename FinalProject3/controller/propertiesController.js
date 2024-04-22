@@ -1,12 +1,18 @@
 const propertiesModel = require("../models/propertiesModel");
 
 function list(req, res) {
-  //1 - Check if filters are set
-  // const filters = req.params.id
+  // Get the search query from the request
+  const { address } = req.query;
 
-  //Get all properties data from model
-  const properties = propertiesModel.findAll();
-  //Send the properties data as a response
+  // Get all properties data from model
+  let properties = propertiesModel.findAll();
+
+  // If an address is provided, filter properties by address
+  if (address) {
+      properties = properties.filter(property => property.address.includes(address));
+  }
+
+  // Send the filtered or all properties data as a response
   res.json(properties);
 }
 
