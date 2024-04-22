@@ -99,27 +99,9 @@ $(document).ready(function () {
         };
         console.log(newUser);
         await registerUser(newUser)
-
-        // // Clear signup form fields after successful signup
-        // $("#signupForm")[0].reset();
-
-        // console.log("User role:", newUser.role); // Log user's role
-        // if (newUser.role === "owner") {
-        //     $(".index, .login, .signup, .coworker").hide();
-        //     $(".owner").toggle(); // Toggle the visibility of the owner page
-
-        //     // Fetch property data from local storage
-        //     var properties = JSON.parse(localStorage.getItem("properties")) || [];
-        //     // Fill the listing with properties owned by the user
-        //     fillListing($(".owner .Listings"), newUser.id_user);
-        // } else if (newUser.role === "coworker") {
-        //     showIndexPage(); // Hide all pages before showing the coworker page
-        //     $(".coworker").toggle(); // Toggle the visibility of the coworker page
-
-        //     // Fetch property data from local storage
-        //     var properties = JSON.parse(localStorage.getItem("properties")) || [];
-        //     // Fill the listing with all properties
-        //     fillListing($(".coworker .Listings"));
-        // }
     });
 })
+
+$(".backBtn").click(function () {
+    window.location.assign('index.html')
+  });
