@@ -56,6 +56,7 @@ a:hover, #logout-btn:hover {
   justify-content: center;
   border-bottom: 5px solid rgb(39, 39, 39);
   margin: 0px;
+  text-indent: 8px;
 }
 
 .mainSection {
